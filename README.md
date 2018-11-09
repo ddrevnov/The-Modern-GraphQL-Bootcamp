@@ -24,7 +24,13 @@ http://localhost:4000/
 
 ![Application](/img/pic-02-01.png?raw=true)
 
+<br/>
 
+### 08 GraphQL Scalar Types
+
+<br/>
+
+![Application](/img/pic-02-02.png?raw=true)
 
 ---
 
