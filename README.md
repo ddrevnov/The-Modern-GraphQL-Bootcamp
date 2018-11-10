@@ -32,6 +32,19 @@ http://localhost:4000/
 
 ![Application](/img/pic-02-02.png?raw=true)
 
+<br/>
+
+### 09 Live Reload for GraphQL-Yoga
+
+<br/>
+
+### 10 Creating Custom Types
+
+<br/>
+
+![Application](/img/pic-02-03.png?raw=true)
+
+
 ---
 
 **Marley**
