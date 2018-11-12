@@ -60,6 +60,18 @@ http://localhost:4000/
 
 ![Application](/img/pic-02-05.png?raw=true)
 
+<br/>
+
+### 13 Working with Arrays-2
+
+<br/>
+
+![Application](/img/pic-02-06.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-02-07.png?raw=true)
+
 ---
 
 **Marley**
