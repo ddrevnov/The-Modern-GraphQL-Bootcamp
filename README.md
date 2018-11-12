@@ -72,6 +72,14 @@ http://localhost:4000/
 
 ![Application](/img/pic-02-07.png?raw=true)
 
+<br/>
+
+### 14 Relational Data. Basics
+
+<br/>
+
+![Application](/img/pic-02-08.png?raw=true)
+
 ---
 
 **Marley**
