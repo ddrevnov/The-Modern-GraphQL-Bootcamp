@@ -80,6 +80,15 @@ http://localhost:4000/
 
 ![Application](/img/pic-02-08.png?raw=true)
 
+
+<br/>
+
+### 15 Relational Data. Arrays
+
+<br/>
+
+![Application](/img/pic-02-09.png?raw=true)
+
 ---
 
 **Marley**
