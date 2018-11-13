@@ -191,6 +191,18 @@ http://localhost:4000/
 
 ![Application](/img/pic-03-06.png?raw=true)
 
+<br/>
+
+### 11 Updating Data with Mutations-2
+
+<br/>
+
+![Application](/img/pic-03-07.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-03-08.png?raw=true)
+
 ---
 
 **Marley**
