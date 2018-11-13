@@ -175,6 +175,10 @@ http://localhost:4000/
 
 ![Application](/img/pic-03-05.png?raw=true)
 
+<br/>
+
+### 08 A Pro GraphQL Project Structure-1
+
 ---
 
 **Marley**
