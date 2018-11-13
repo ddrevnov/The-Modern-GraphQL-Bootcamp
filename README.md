@@ -122,6 +122,47 @@ http://localhost:4000/
 
 ![Application](/img/pic-02-14.png?raw=true)
 
+<br/>
+
+## 03 GraphQL Basics. Mutations
+
+<br/>
+
+### 02 Creating Data with Mutations-1
+
+    $ npm install --save uuid
+
+<br/>
+
+![Application](/img/pic-03-01.png?raw=true)
+
+<br/>
+
+### 03 Creating Data with Mutations-2
+
+<br/>
+
+![Application](/img/pic-03-02.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-03-03.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-03-04.png?raw=true)
+
+
+<br/>
+
+### 04 The Object Spread Operator with Node.js
+
+    $ npm install --save babel-plugin-transform-object-rest-spread
+
+<br/>
+
+### 05 The Input Type  
+
 
 ---
 
