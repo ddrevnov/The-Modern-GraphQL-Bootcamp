@@ -163,6 +163,17 @@ http://localhost:4000/
 
 ### 05 The Input Type  
 
+<br/>
+
+### 06 Deleting Data with Mutations-1
+
+<br/>
+
+### 07 Deleting Data with Mutations-2
+
+<br/>
+
+![Application](/img/pic-03-05.png?raw=true)
 
 ---
 
