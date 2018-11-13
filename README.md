@@ -179,6 +179,12 @@ http://localhost:4000/
 
 ### 08 A Pro GraphQL Project Structure-1
 
+<br/>
+
+### 09 A Pro GraphQL Project Structure-2
+
+
+
 ---
 
 **Marley**
