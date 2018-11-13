@@ -183,7 +183,13 @@ http://localhost:4000/
 
 ### 09 A Pro GraphQL Project Structure-2
 
+<br/>
 
+### 10 Updating Data with Mutations-1
+
+<br/>
+
+![Application](/img/pic-03-06.png?raw=true)
 
 ---
 
