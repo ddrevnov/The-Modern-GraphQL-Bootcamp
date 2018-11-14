@@ -230,6 +230,37 @@ https://github.com/apollographql/graphql-subscriptions
 
 ![Application](/img/pic-04-03.png?raw=true)
 
+
+<br/>
+
+### 04 Setting up a Posts Subscription
+
+
+**Create post**
+
+```js
+mutation {
+  createPost (
+    data: {
+      title: "My new post",
+      body: "My new post body",
+      published: true,
+      author: "3"
+    }
+  ) {
+    id
+    title
+    body
+    published
+  }
+}
+
+```
+
+<br/>
+
+![Application](/img/pic-04-04.png?raw=true)
+
 ---
 
 **Marley**
