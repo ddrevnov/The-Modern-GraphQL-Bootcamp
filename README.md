@@ -411,6 +411,13 @@ mutation {
 
 ![Application](/img/pic-04-10.png?raw=true)
 
+
+<br/>
+
+### 07 Enums
+
+
+
 ---
 
 **Marley**
