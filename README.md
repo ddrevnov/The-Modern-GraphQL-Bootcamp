@@ -436,6 +436,35 @@ We made heroku postgresql database.
 
 We installed docker and docker-compose
 
+<br/>
+
+### 06 Prisma 101
+
+http://prisma.io
+
+    $ npm install -g prisma
+
+<br/ >
+
+    $ prisma -v
+    prisma/1.20.6 (linux-x64) node-v11.1.0
+
+    $ cd 02-graphql-prisma/
+
+<br/>
+
+    $ prisma init prisma
+
+    --> Use existing database
+    --> PostgreSQL
+    --> ? Does your database contain existing data? (No)
+
+
+    $ cd prisma
+    $ docker-compose up -d
+    $ prisma deploy
+
+
 
 
 ---
