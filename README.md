@@ -218,6 +218,18 @@ https://github.com/apollographql/graphql-subscriptions
 
 ![Application](/img/pic-04-01.png?raw=true)
 
+<br/>
+
+### 03 Setting up a Comments Subscription
+
+<br/>
+
+![Application](/img/pic-04-02.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-04-03.png?raw=true)
+
 ---
 
 **Marley**
