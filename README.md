@@ -464,7 +464,60 @@ http://prisma.io
     $ docker-compose up -d
     $ prisma deploy
 
+http://localhost:4466/
 
+
+<br/>
+
+### 07 Exploring the Prisma GraphQL API
+
+```js
+
+# Write your query or mutation here
+mutation {
+  createUser(
+    data: {
+      name: "Andrew Mead"
+    }
+  )
+  {
+    id
+    name
+  }
+  
+}
+  
+```
+<br/>
+
+![Application](/img/pic-05-02.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-05-03.png?raw=true)
+
+
+<br/>
+
+
+```js
+
+mutation {
+  updateUser(
+    where: {
+      id: "cjoho6xt0000e0971hfc104dp"
+    }
+  ,
+  data: {
+  	name: "Andrew"
+		}
+  ){
+    id
+    name
+  }
+}
+
+```
 
 
 ---
