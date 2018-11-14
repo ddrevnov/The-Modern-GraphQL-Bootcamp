@@ -330,8 +330,86 @@ mutation {
 
 ![Application](/img/pic-04-07.png?raw=true)
 
+<br/>
+
+### 06 Expanding the Comments Subscription for Edits and Deletions
+
+```js
+mutation {
+  createComment(
+    data: {
+      text: "My new comment",
+      author: "1",
+      post: "10"
+    }
+  ) {
+    id
+    text
+  }
+}
+```
+
+<br/>
+
+```js
+
+subscription {
+  comment(postId: "10"){
+    mutation
+    data {
+      id
+      text
+      author{
+        id
+        name
+      }
+    }
+    
+  }
+}
+
+```
+
+<br/>
+
+![Application](/img/pic-04-08.png?raw=true)
 
 
+```js
+
+mutation {
+  updateComment(
+    id: "b11c9e31-5686-4cb4-b1a5-c82a5b2a2654",
+    data: {
+      text: "This is my new comment text!"
+    }
+  ){
+    id
+    text
+  }
+}
+
+```
+
+<br/>
+
+![Application](/img/pic-04-09.png?raw=true)
+
+
+```js
+
+mutation {
+  deleteComment(id: "b11c9e31-5686-4cb4-b1a5-c82a5b2a2654"){
+    id
+    text
+  }
+}
+  
+```  
+
+<br/>
+
+![Application](/img/pic-04-10.png?raw=true)
 
 ---
 
