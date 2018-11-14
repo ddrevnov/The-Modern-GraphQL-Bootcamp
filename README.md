@@ -416,6 +416,26 @@ mutation {
 
 ### 07 Enums
 
+<br/>
+
+## 05 Database Storage with Prisma
+
+<br/>
+
+### 02 What is Prisma
+
+<br/>
+
+### 05 Prisma Ubuntu Setup
+
+We made heroku postgresql database.
+
+<br/>
+
+![Application](/img/pic-05-01.png?raw=true)
+
+We installed docker and docker-compose
+
 
 
 ---
