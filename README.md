@@ -203,6 +203,21 @@ http://localhost:4000/
 
 ![Application](/img/pic-03-08.png?raw=true)
 
+
+<br/>
+
+## 04 GraphQL Basics. Subscriptions
+
+<br/>
+
+### 02 GraphQL Subscription Basics
+
+https://github.com/apollographql/graphql-subscriptions
+
+<br/>
+
+![Application](/img/pic-04-01.png?raw=true)
+
 ---
 
 **Marley**
