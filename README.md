@@ -259,7 +259,79 @@ mutation {
 
 <br/>
 
+**Subscription post**
+
+```js
+subscription {
+  post {
+    id
+    title
+    body
+    author {
+      id
+      name
+    }
+  }
+}
+```
+
+<br/>
+
 ![Application](/img/pic-04-04.png?raw=true)
+
+<br/>
+
+### 05 Expanding the Posts Subscription for Edits and Deletions
+
+<br/>
+
+![Application](/img/pic-04-05.png?raw=true)
+
+
+<br/>
+
+```js 
+mutation {
+  deletePost (
+    id: "12"
+  ) {
+    id
+    title
+    body
+    published
+  }
+}
+```
+<br/>
+
+![Application](/img/pic-04-06.png?raw=true)
+
+
+<br/>
+
+```js
+mutation {
+  updatePost(
+    id: "10",
+    data: {
+      body: "This is my new body"
+    } 
+  )
+  {
+    id
+    title
+    body
+    published
+  }
+}
+```
+
+<br/>
+
+![Application](/img/pic-04-07.png?raw=true)
+
+
+
 
 ---
 
