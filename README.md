@@ -781,7 +781,151 @@ output:
 
 http://localhost:4466/reviews
 
+<br/>
 
+### 17 Modeling a Review System with Prisma. Solution
+
+    $ prisma deploy
+
+http://localhost:4466/reviews
+
+<br/>
+
+```js
+
+mutation {
+  createBook (
+    data: {
+      title: "Rest",
+      author: "Alex Pang",
+      isbn: "abc123"
+    }
+  ) {
+    id
+    title
+    author
+    isbn
+    reviews {
+      id
+      text
+      rating
+    }
+  }
+}
+
+```
+
+<br/>
+
+```js
+
+mutation {
+  createUser(
+    data: {
+      username: "SleepyGuy"
+    }
+  ) {
+    id
+    username
+  }
+}
+
+```
+
+<br/>
+
+```js
+
+mutation {
+  createReview(
+    data: {
+      text: "It was a good read.",
+      rating: 5,
+      book: {
+        connect: {
+          id: "cjoj2hhoa006p0a76gq27yuj9"
+        }
+      }, 
+      author: {
+        connect: {
+          id: "cjoj2karr006w0a76epo1by00"
+        }
+      }
+    }
+  ) {
+    id
+    text
+    rating
+  }
+}
+
+```
+
+<br/>
+
+```js
+
+query {
+  books {
+    id
+    title
+    author
+    isbn
+    reviews {
+      id
+      text
+      rating
+      author {
+        id
+        username
+      }
+    }
+  }
+}
+
+```
+
+```js
+
+mutation{
+  deleteUser(
+    where: {
+      id: "cjoj2r3be00760a76xx66d1g8"
+    }
+  ){
+    id
+    username
+  }
+}
+
+```
+
+```js
+
+mutation {
+  deleteBook(
+    where: {
+      id: "cjoj2hhoa006p0a76gq27yuj9"
+    }
+  ) {
+    id
+    title
+  }
+}
+
+```
+
+<br/>
+
+```js
+
+query {
+  reviews {
+    id
+  }
+}
+
+```
 
 ---
 
