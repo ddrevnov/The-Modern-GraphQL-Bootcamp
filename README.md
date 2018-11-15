@@ -772,6 +772,17 @@ output:
 
     $ prisma deploy
 
+<br/>
+
+### 16 Modeling a Review System with Prisma. Set Up
+
+    $ cd ../prisma-review-website/
+    $ prisma deploy
+
+http://localhost:4466/reviews
+
+
+
 ---
 
 **Marley**
