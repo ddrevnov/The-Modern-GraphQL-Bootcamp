@@ -724,6 +724,8 @@ query{
 
     $ npm start
 
+output:
+
 ```json
 
 [
@@ -747,6 +749,11 @@ query{
 ]
 
 ```
+
+<br/>
+
+### 12 Mutations with Prisma Bindings
+
 
 
 ---
