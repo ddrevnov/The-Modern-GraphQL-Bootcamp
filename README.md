@@ -473,7 +473,6 @@ http://localhost:4466/
 
 ```js
 
-# Write your query or mutation here
 mutation {
   createUser(
     data: {
@@ -519,6 +518,39 @@ mutation {
 
 ```
 
+<br/>
+
+### 08 Add Post type to Prisma
+
+```js
+
+mutation {
+  createPost(
+    data: {
+      title: "Prisma post"
+      body: "Some Text",
+      published: false,
+      author: {
+        connect: {
+          id: "cjoiifovh000c0988np1hga7c"
+        }
+      }
+    }
+  )
+  {
+    id
+    title
+    body
+    published
+    author {
+      id
+      name
+    }
+  }
+  
+}
+
+```
 
 ---
 
