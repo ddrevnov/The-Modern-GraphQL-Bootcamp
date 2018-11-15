@@ -701,6 +701,22 @@ query{
 
 ```
 
+<br/>
+
+### 10 Integrating Prisma into a Node.js Project
+
+    $ cd 01-graphql-basics/
+    $ cp -R * ../02-graphql-prisma/
+
+    https://github.com/prisma/prisma-binding
+
+<br/>
+
+    $ npm install --save prisma-binding
+    $ npm install --save graphql-cli
+
+
+
 
 
 
