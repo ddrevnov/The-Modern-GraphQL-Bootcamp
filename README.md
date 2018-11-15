@@ -715,9 +715,38 @@ query{
     $ npm install --save prisma-binding
     $ npm install --save graphql-cli
 
+    $ npm run get-schema
 
 
+<br/>
 
+### 11 Using Prisma Bindings
+
+    $ npm start
+
+```json
+
+[
+  {
+    "id": "cjoipm2kq000d0a76qpdn5zrp",
+    "name": "Andrew Mead",
+    "email": "mead@example.com",
+    "posts": [
+      {
+        "id": "cjoipoa66000m0a76odfxa7wv",
+        "title": "Prisma post"
+      }
+    ]
+  },
+  {
+    "id": "cjoiptotu000t0a76ld1oaz0p",
+    "name": "Andrew",
+    "email": "andrew@example.com",
+    "posts": []
+  }
+]
+
+```
 
 
 ---
