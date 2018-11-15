@@ -483,7 +483,6 @@ mutation {
     id
     name
   }
-  
 }
   
 ```
@@ -546,11 +545,164 @@ mutation {
       id
       name
     }
-  }
-  
+  } 
 }
 
 ```
+
+<br/>
+
+### 09 Adding Comment Type to Prisma
+
+    $ prisma reset
+    $ prisma deploy
+
+```js
+mutation {
+  createUser(
+    data: {
+      name: "Andrew Mead"
+      email: "mead@example.com"
+    }
+  )
+  {
+    id
+    name
+    email
+  }
+  
+}
+```
+
+<br/>
+
+```js
+# Write your query or mutation here
+mutation {
+  createPost(
+    data: {
+      title: "Prisma post"
+      body: "Some Text",
+      published: false,
+      author: {
+        connect: {
+          id: "cjoipm2kq000d0a76qpdn5zrp"
+        }
+      }
+    }
+  )
+  {
+    id
+    title
+    body
+    published
+    author {
+      id
+      name
+    }
+  }
+  
+}
+  
+```
+
+<br/>
+
+```js
+mutation {
+  updatePost(
+    where: {
+      id: "cjoipoa66000m0a76odfxa7wv"
+    }
+  ,
+  data: {
+  	published: true
+		}
+  ){
+    id
+    title
+    body
+    published
+  }
+}
+```
+
+<br/>
+
+<hr/>
+
+```js
+
+mutation {
+  createUser(
+    data: {
+      name: "Andrew"
+      email: "andrew@example.com"
+    }
+  )
+  {
+    id
+    name
+    email
+  }
+  
+}
+  
+```
+
+
+<br/>
+
+```js
+
+mutation {
+  createComment(
+    data: {
+      text: "A comment from Prisma GraphQL"
+      author: {
+        connect: {
+          id: "cjoiptotu000t0a76ld1oaz0p"
+        }
+      },
+      post: {
+        connect: {
+          id: "cjoipoa66000m0a76odfxa7wv"
+        }
+      }
+    }
+  )
+  {
+    id
+    text
+    author {
+      id
+      name
+    }
+  }
+  
+}
+  
+```
+
+<br/>
+
+```js
+
+query{
+  comments {
+    id
+    text
+    author {
+      id
+      name
+    }
+  }
+}
+
+```
+
+
+
 
 ---
 
