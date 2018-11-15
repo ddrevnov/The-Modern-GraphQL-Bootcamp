@@ -758,6 +758,10 @@ output:
 
 ### 13 Using Async and Await with Prisma Bindings
 
+<br/>
+
+### 14 Checking If Data Exists Using Prisma Bindings
+
 ---
 
 **Marley**

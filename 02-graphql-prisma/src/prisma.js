@@ -85,26 +85,111 @@ const prisma = new Prisma({
 // SAMPLE 02: 13 Using Async and Await with Prisma Bindings
 
 
+// const updatePostForUser = async (postId, data) => {
+//   const post = await prisma.mutation.updatePost({
+//     where: {
+//       id: postId
+//     }, 
+//     data
+//   }, '{ author { id } }');
+
+//   const user = await prisma.query.user({
+//     where: {
+//       id: post.author.id
+//     }
+//   }, '{ id name email posts { id title published } }');
+
+//   return user;
+// }
+
+// updatePostForUser("cjoipoa66000m0a76odfxa7wv", { published: false })
+//   .then((user) => {
+//     console.log(JSON.stringify(user, undefined, 2));
+//   });
+
+// SAMPLE 02: 13 Using Async and Await with Prisma Bindings
+
+
+// SAMPLE 01: 14 Checking If Data Exists Using Prisma Bindings
+
+
+// prisma.exists.Comment({
+//   id: "cjoipzd4z000y0a76wv1ox0e1",
+//   author: {
+//     id: "cjoiptotu000t0a76ld1oaz0p"
+//   }
+// }).then((exists) => {
+// console.log(exists);
+// });
+
+
+// SAMPLE 02: 14 Checking If Data Exists Using Prisma Bindings
+
+// const createPostForUser = async (authorId, data) => {
+
+//   const userExists = await prisma.exists.User({
+//       id: authorId
+//     });
+    
+//     if (!userExists) { throw new Error ('User not found!'); }
+
+//   const post = await prisma.mutation.createPost({
+//       data: {
+//         ...data,
+//         author: {
+//           connect: {
+//             id: authorId
+//           }
+//         }
+//       }
+//   }, '{ author { id name email posts { id title published }} }');
+
+//   return post.author;
+// };
+
+
+// createPostForUser("cjoipm2kq000d0a76qpdn5zrp", {
+//   title: 'Great books for read!',
+//   body: 'The War of Art',
+//   published: true
+// }).then((user) =>{
+//   console.log(JSON.stringify(user, undefined, 2));
+// }).catch((error) => {
+//   console.log(error.message);
+// });
+
+
+// SAMPLE 02: 14 Checking If Data Exists Using Prisma Bindings
+
+
+// SAMPLE 03: 14 Checking If Data Exists Using Prisma Bindings
+
+
 const updatePostForUser = async (postId, data) => {
+
+  const postExists = await prisma.exists.Post({
+    id: postId
+  });
+
+  if (!postExists){ throw new Error ('Post not found!'); }
+
   const post = await prisma.mutation.updatePost({
     where: {
       id: postId
     }, 
     data
-  }, '{ author { id } }');
+  }, '{ author { id name email posts { id title published }} }');
 
-  const user = await prisma.query.user({
-    where: {
-      id: post.author.id
-    }
-  }, '{ id name email posts { id title published } }');
-
-  return user;
+  return post.author;
 }
 
-updatePostForUser("cjoipoa66000m0a76odfxa7wv", { published: false })
+updatePostForUser("cjoipoa66000m0a76odfxa7wv", { published: true })
   .then((user) => {
     console.log(JSON.stringify(user, undefined, 2));
+  })
+  .catch((error) =>{
+    console.log(error.message);
   });
 
-// SAMPLE 02: 13 Using Async and Await with Prisma Bindings
+
+// SAMPLE 03: 14 Checking If Data Exists Using Prisma Bindings
