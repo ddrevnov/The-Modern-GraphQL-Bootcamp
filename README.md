@@ -1045,6 +1045,28 @@ mutation {
 
     $ npm run get-schema
 
+<br/>
+
+### 08 Adding Prisma into GraphQL Subscriptions
+
+```js
+
+subscription {
+  comment(postId: "10"){
+    mutation
+    node {
+      id
+      text
+      author{
+        id
+        name
+      }
+    }
+    
+  }
+}
+
+```
 
 ---
 
