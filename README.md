@@ -1039,6 +1039,13 @@ mutation {
 
 ```
 
+<br/>
+
+### 07 Adding Prisma into GraphQL Update Mutations-2
+
+    $ npm run get-schema
+
+
 ---
 
 **Marley**
