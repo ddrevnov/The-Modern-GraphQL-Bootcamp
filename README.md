@@ -1068,6 +1068,14 @@ subscription {
 
 ```
 
+<br/>
+
+### 09 Closing Prisma to the Outside World
+
+    $ prisma deploy
+    $ prisma token
+
+
 ---
 
 **Marley**
