@@ -1116,6 +1116,9 @@ mutation {
 
     $ npm install --save jsonwebtoken
 
+<br/>
+
+### 13 Logging in Existing Users
 
 ```js
 mutation {
@@ -1136,6 +1139,25 @@ mutation {
 } 
 ```
 
+
+```js
+
+mutation {
+  login(
+    data: {
+      email:"andrew@example.com",
+      password: "12345678"
+    }
+  ) {
+    user {
+      id
+      name
+    }
+    token
+  }
+}
+
+```
 ---
 
 **Marley**
