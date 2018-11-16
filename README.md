@@ -1110,6 +1110,32 @@ mutation {
 
 ```
 
+<br/>
+
+### 12 Creating Auth Tokens with JSON Web Tokens
+
+    $ npm install --save jsonwebtoken
+
+
+```js
+mutation {
+  createUser (
+    data: {
+      name: "Andrew",
+      email: "andrew@example.com",
+      password: "12345678"
+    }
+  ) {
+    user {
+      id
+      name
+      email
+    }
+    token
+  }
+} 
+```
+
 ---
 
 **Marley**
