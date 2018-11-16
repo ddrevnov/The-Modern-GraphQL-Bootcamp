@@ -1076,6 +1076,15 @@ subscription {
     $ prisma token
 
 
+<br/>
+
+### 10 Allowing for Generated Schemas
+
+    $ prisma delete
+    $ prisma deploy
+    $ npm run get-schema
+
+
 ---
 
 **Marley**
