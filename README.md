@@ -952,6 +952,10 @@ query {
 
 ![Application](/img/pic-06-03.png?raw=true)
 
+<br/>
+
+### 04 Refactoring Custom Type Resolvers
+
 ---
 
 **Marley**
