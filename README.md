@@ -956,6 +956,43 @@ query {
 
 ### 04 Refactoring Custom Type Resolvers
 
+<br/>
+
+### 05 Adding Prisma into GraphQL Mutations
+
+
+```js
+
+mutation {
+  createUser (
+    data: {
+      name: "Jess",
+      email: "jess@example.com"
+    }
+  ) {
+    id
+    name
+    email
+  }
+}
+
+```
+
+<br/>
+
+```js
+
+
+mutation{
+  deleteUser(id: "cjoiptotu000t0a76ld1oaz0p"){
+    id
+    name
+    email
+  }
+}
+
+```
+
 ---
 
 **Marley**
