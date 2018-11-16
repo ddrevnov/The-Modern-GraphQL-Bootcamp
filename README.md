@@ -944,7 +944,13 @@ query {
 
 ![Application](/img/pic-06-02.png?raw=true)
 
+<br/>
 
+### 03 Integrating Operation Arguments
+
+<br/>
+
+![Application](/img/pic-06-03.png?raw=true)
 
 ---
 
