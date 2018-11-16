@@ -927,6 +927,25 @@ query {
 
 ```
 
+
+<br/>
+
+## 06 Authentication with GraphQL
+
+<br/>
+
+### 02 Adding Prisma into GraphQL Queries
+
+<br/>
+
+![Application](/img/pic-06-01.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-06-02.png?raw=true)
+
+
+
 ---
 
 **Marley**
