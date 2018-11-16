@@ -1084,6 +1084,31 @@ subscription {
     $ prisma deploy
     $ npm run get-schema
 
+<br/>
+
+### 11 Storing Passwords
+
+    $ npm uninstall uuid
+    $ npm install --save bcryptjs
+
+```js
+
+mutation {
+  createUser (
+    data: {
+      name: "Jess",
+      email: "jess@example.com",
+      password: "12345678"
+    }
+  ) {
+    id
+    name
+    email
+    password
+  }
+}
+
+```
 
 ---
 
