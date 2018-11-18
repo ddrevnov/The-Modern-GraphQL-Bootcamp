@@ -444,7 +444,7 @@ http://prisma.io
 
     $ npm install -g prisma
 
-<br/ >
+<br/>
 
     $ prisma -v
     prisma/1.20.6 (linux-x64) node-v11.1.0
@@ -1138,7 +1138,7 @@ mutation {
   }
 } 
 ```
-
+<br/>
 
 ```js
 
@@ -1158,6 +1158,20 @@ mutation {
 }
 
 ```
+
+<br/>
+
+### 14 Validating Auth Tokens
+
+{
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjam9ram5mbW8wMDJsMDk3NnlsMWJ2cHpnIiwiaWF0IjoxNTQyNDA0MjIzfQ.4A-G50GPGxjcIEsHtEmdY5AvHdKxFlvB15TzZ2hVEcc"
+}
+
+<br/>
+
+![Application](/img/pic-06-04?raw=true)
+
+
 ---
 
 **Marley**
