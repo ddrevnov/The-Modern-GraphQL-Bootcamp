@@ -45,9 +45,10 @@ const Mutation = {
         token: jwt.sign({ userId: user.id}, 'thisisasecret')
       };
   },
-  async deleteUser(parent, args, { prisma }, info) {
+  async deleteUser(parent, args, { prisma, request }, info) {
+    const userId = getUserId(request);
     const userExists = await prisma.exists.User({
-      id: args.id
+      id: userId
     });
 
     if (!userExists) { throw new Error('User not found!');}
@@ -58,16 +59,17 @@ const Mutation = {
       }
     }, info);
   },
-  async updateUser(parent, args, { prisma }, info) {
+  async updateUser(parent, args, { prisma, request }, info) {
+    const userId = getUserId(request);
     return prisma.mutation.updateUser({
       where: {
-        id: args.id
+        id: userId
       },
       data: args.data
     }, info);
   },
   async createPost(parent, args, { prisma, request }, info) {
-    const usrId = getUserId(request);
+    const userId = getUserId(request);
     return prisma.mutation.createPost({
       data: {
         title: args.data.title,
@@ -75,13 +77,25 @@ const Mutation = {
         published: args.data.published,
         author: {
           connect: {
-            id: usrId
+            id: userId
           }
         }
       }
     }, info );
   },
-  async deletePost(parent, args, { prisma }, info){
+  async deletePost(parent, args, { prisma, request }, info){
+    const userId = getUserId(request);
+
+    const postExists = await prisma.exists.Post({
+      id: args.id,
+      author: {
+        id: userId
+      }
+    });
+
+    if (!postExists) { throw new Error('Unable to delete post'); }
+
+
     return prisma.mutation.deletePost({
       where: {
         id: args.id
