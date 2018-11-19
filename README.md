@@ -1208,6 +1208,10 @@ mutation {
 
 ### 21 Cleaning up Some Edge Cases
 
+<br/>
+
+### 22 Locking Down Subscriptions
+
 ---
 
 **Marley**
