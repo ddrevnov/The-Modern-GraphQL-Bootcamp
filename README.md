@@ -1200,7 +1200,9 @@ mutation {
 
 ### 19 Locking Down Individual Type Fields
 
+<br/>
 
+### 20 Fragments
 
 ---
 
