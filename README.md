@@ -1176,6 +1176,10 @@ mutation {
 
 ### 15 Locking Down Mutations (Users)
 
+<br/>
+
+### 16 Locking Down Mutations (Posts and Comments)
+
 ---
 
 **Marley**
