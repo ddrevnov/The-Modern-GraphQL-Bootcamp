@@ -1216,7 +1216,9 @@ mutation {
 
 ### 23 Token Expiration
 
+<br/>
 
+### 24 Password Updates
 
 ---
 
