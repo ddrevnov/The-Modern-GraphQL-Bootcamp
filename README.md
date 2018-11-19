@@ -1196,6 +1196,12 @@ mutation {
 
 ![Application](/img/pic-06-06?raw=true)
 
+<br/>
+
+### 19 Locking Down Individual Type Fields
+
+
+
 ---
 
 **Marley**
