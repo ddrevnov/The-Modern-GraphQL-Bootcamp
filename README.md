@@ -1188,6 +1188,14 @@ mutation {
 
 ![Application](/img/pic-06-05?raw=true)
 
+<br/>
+
+### 18 Locking Down Queries-2
+
+<br/>
+
+![Application](/img/pic-06-06?raw=true)
+
 ---
 
 **Marley**
