@@ -1180,6 +1180,14 @@ mutation {
 
 ### 16 Locking Down Mutations (Posts and Comments)
 
+<br/>
+
+### 17 Locking Down Queries-1
+
+<br/>
+
+![Application](/img/pic-06-05?raw=true)
+
 ---
 
 **Marley**

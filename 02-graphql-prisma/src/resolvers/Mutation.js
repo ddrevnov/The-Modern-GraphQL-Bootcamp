@@ -116,7 +116,7 @@ const Mutation = {
 
     return prisma.mutation.updatePost({
       where: {
-        id: userId
+        id: args.id
       },
       data: args.data
     }, info);
