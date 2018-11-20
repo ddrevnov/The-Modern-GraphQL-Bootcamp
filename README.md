@@ -1337,6 +1337,29 @@ mutation {
     $ npm install --save env-cmd
     $ npm run dev
 
+<br/>
+
+### 06 Node.js Production App Deployment-2
+
+    $ npm install @babel/polyfill
+
+    $ npm run heroku-postbuild
+
+    $ git init
+    $ git add .
+    $ git commit -m "Initial commit"
+    $ heroku login
+    $ heroku create
+    $ heroku config:set PRISMA_ENDPOINT=https://marley-blogging-app-a3665060b1.herokuapp.com/marley-blogging-app/prod
+    $ git remote -v
+    $ git push heroku master
+
+    
+<br/>
+
+![Application](/img/pic-07-04?raw=true)
+
+
 ---
 
 **Marley**

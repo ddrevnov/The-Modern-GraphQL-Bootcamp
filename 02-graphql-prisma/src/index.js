@@ -1,3 +1,4 @@
+import '@babel/polyfill'
 import { GraphQLServer, PubSub } from 'graphql-yoga';
 import db from './db';
 import { resolvers, fragmentReplacemtnts } from './resolvers/index';
