@@ -1269,6 +1269,27 @@ query {
 }
 ```
 
+<br/>
+
+## 08 Production Deployment
+
+<br/>
+
+### 02 Creating a Prisma Service
+
+prisma.io
+
+servers --> add new --> create new database --> heroku --> set up a server
+
+
+<br/>
+
+![Application](/img/pic-07-01?raw=true)
+
+<br/>
+
+![Application](/img/pic-07-02?raw=true)
+
 ---
 
 **Marley**
