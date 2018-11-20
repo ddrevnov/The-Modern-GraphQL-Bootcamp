@@ -1309,6 +1309,27 @@ servers --> add new --> create new database --> heroku --> set up a server
 
 ![Application](/img/pic-07-03?raw=true)
 
+<br/>
+
+### 04 Exploring the Production Prisma Instance
+
+```js
+mutation {
+  createUser(
+    data:{
+      name: "Andrew",
+      email: "andrew@example.com",
+      password: "12345678"
+    }
+  ) {
+    id
+    name
+  }
+}
+
+```
+
+
 ---
 
 **Marley**
