@@ -1290,6 +1290,25 @@ servers --> add new --> create new database --> heroku --> set up a server
 
 ![Application](/img/pic-07-02?raw=true)
 
+<br/>
+
+### 03 Prisma Configuration and Deployment
+
+    $ prisma login
+    $ prisma deploy -e ../config/prod.env
+
+<br/>
+
+    ? Set up a new Prisma server or deploy to an existing server? marley/marley-blog
+    ging-app
+    ? Choose a name for your service marley-blogging-app
+    ? Choose a name for your stage prod
+
+
+<br/>
+
+![Application](/img/pic-07-03?raw=true)
+
 ---
 
 **Marley**
