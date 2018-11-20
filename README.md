@@ -1220,6 +1220,26 @@ mutation {
 
 ### 24 Password Updates
 
+<br/>
+
+## 07 Pagination and Sorting with GraphQL
+
+<br/>
+
+### 02 Pagination
+
+```js
+query {
+  posts (first:3, skip: 4) {
+    id
+    title
+    body
+    published
+  }
+}
+
+```
+
 ---
 
 **Marley**
