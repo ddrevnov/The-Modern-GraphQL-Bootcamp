@@ -1,3 +1,4 @@
 endpoint: ${env:PRISMA_ENDPINT}
 datamodel: datamodel.graphql
-secret: thisismysupersecrettext
+secret: ${env:PRISMA_SECRET}
+
