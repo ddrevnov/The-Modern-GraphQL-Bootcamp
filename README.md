@@ -1250,7 +1250,24 @@ query {
     $ prisma deploy
     $ npm run get-schema
 
+<br/>
 
+### 05 Sorting Data
+
+```js
+query {
+  posts (orderBy:title_ASC) {
+    id
+    title
+    body
+    published
+    author {
+      id
+      name
+    }
+  }
+}
+```
 
 ---
 
