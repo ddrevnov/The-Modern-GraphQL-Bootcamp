@@ -1243,6 +1243,13 @@ query {
 
 ### 03 Pagination Using Cursors
 
+<br/>
+
+### 04 Working with createdAt and updatedAt
+
+    $ prisma deploy
+    $ npm run get-schema
+
 
 
 ---
