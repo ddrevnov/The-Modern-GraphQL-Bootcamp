@@ -1381,7 +1381,19 @@ mutation {
 ### 02 Setting up a Test Environment
 
     $ prisma deploy -e ../config/test.env
-    
+
+<br/>
+
+### 03 Installing and Exploring Jest
+
+    $ npm install --save-dev jest
+
+    $ npm run test
+
+<br/>
+
+### 04 Testing and Assertions
+
 
 ---
 
