@@ -1418,7 +1418,20 @@ https://www.apollographql.com/
 
 <br/>
 
+### 06 Apollo Client in the Browser-2
+
+<br/>
+
 ![Application](/img/pic-08-01.png?raw=true)
+
+<br/>
+
+### 07 Configuring Jest to Start the GraphQL Server
+
+    $ cd 02-graphql-prisma
+    $ npm install babel-register
+    $ npm run test
+
 
 ---
 
