@@ -1372,6 +1372,17 @@ mutation {
 
     $ git push heroku master
 
+<br/>
+
+## 09 Apollo Client and Testing GraphQL
+
+<br/>
+
+### 02 Setting up a Test Environment
+
+    $ prisma deploy -e ../config/test.env
+    
+
 ---
 
 **Marley**
