@@ -1404,8 +1404,21 @@ mutation {
     $ npm install --save-dev parcel-bundler
     $ npm run start
 
+<br/>
+
+### 06 Apollo Client in the Browser-2
+
+https://www.apollographql.com/
+
+    $ npm install --save apollo-boost graphql
+
+    $ cd ../01-graphql-basics/
+    $ npm run start
 
 
+<br/>
+
+![Application](/img/pic-08-01.png?raw=true)
 
 ---
 
