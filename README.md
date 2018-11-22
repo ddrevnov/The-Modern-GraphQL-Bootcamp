@@ -1433,6 +1433,25 @@ https://www.apollographql.com/
     $ npm run test
 
 
+<br/>
+
+### 08 Testing Mutations | not working !!!
+
+    $ npm install --save apollo-boost graphql cross-fetch
+
+
+<br/>
+
+I do not want to study graphql anymore!
+
+<br/>
+
+![Application](/img/pic-08-02.png?raw=true)  
+
+<br/>
+
+![Application](/img/pic-08-03.png?raw=true)  
+
 ---
 
 **Marley**
